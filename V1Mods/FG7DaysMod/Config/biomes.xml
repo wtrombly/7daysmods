@@ -1,0 +1,16 @@
+<fg7daysmod>
+	<!-- Add taters to Pine Forest biome only -->
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/decorations">
+		<decoration type="block" blockname="plantedPotato3Harvest" prob =".005"/>
+	</append>
+	<!-- more nests... reasons -->
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/decorations/decoration[@blockname='cntBirdnest']/@prob">0.009</set>
+
+	<!-- OPTIONAL: remove land mines from wasteland -->
+	<!-- remove this line
+	<remove xpath="/worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='mineCandyTin']"/>
+	<remove xpath="/worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='mineHubcap']"/>
+	<remove xpath="/worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='hubcapNoMine']"/>
+	and this line -->
+</fg7daysmod>
+

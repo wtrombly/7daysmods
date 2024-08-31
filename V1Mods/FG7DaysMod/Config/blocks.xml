@@ -1,0 +1,37 @@
+<fg7daysmod>
+	<set xpath="/blocks/block[@name='trapSpikesScrapIronMaster']/property[@name='Damage']/@value">75</set>
+	<set xpath="/blocks/block[@name='trapSpikesScrapIronMaster']/property[@name='Damage_received']/@value">5</set>
+
+	<set xpath="/blocks/block[@name='trapSpikesWoodMaster']/property[@name='Damage']/@value">50</set>
+	<set xpath="/blocks/block[@name='trapSpikesWoodMaster']/property[@name='Damage_received']/@value">6</set>
+
+	<set xpath="/blocks/block[@name='terrOreIron']/drop[@name='resourceScrapIron']/@count">200</set>
+
+	<set xpath="/blocks/block[@name='terrOreLead']/drop[@name='resourceScrapLead']/@count">200</set>
+	<set xpath="/blocks/block[@name='terrOreCoal']/drop[@name='resourceCoal']/@count">100</set>
+	<set xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@name='resourcePotassiumNitratePowder']/@count">200</set>
+	<set xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@name='resourceOilShale']/@count">100</set>
+
+		<!-- these things should be deadly... just look at 'em -->
+	<set xpath="/blocks/block[@name='bladeTrap']/property[@name='Damage']/@value">100</set>
+	<!-- A20 no maxDamage prop <set xpath="/blocks/block[@name='bladeTrap']/property[@name='MaxDamage']/@value">4000</set>	-->
+
+		<!-- attempt number 100 to get the blade trap sound out -->
+	<remove xpath="/blocks/block[@name='bladeTrap']/property[@name='RunningSound']"/>
+	<append xpath="/blocks/block[@name='bladeTrap']">
+		<property name="RunningSound" value=""/>
+	</append>
+
+	<!-- Set plant growth rate (in minutes).  Default value is 63 -->
+	<set xpath="blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">12</set>
+	<set xpath="blocks/block[@name='treeMasterGrowing']/property[@name='PlantGrowing.GrowthRate']/@value">18</set>
+
+	<!-- Buff Dew Collector to see what happens -->
+	<set xpath="blocks/block[@name='cntDewCollector']/property[@name='ModdedConvertSpeed']/@value">8</set>
+	<set xpath="blocks/block[@name='cntDewCollector']/property[@name='ModdedConvertCount']/@value">8</set>
+
+	<!-- Remove the CLUNK sound from forge crafting -->
+	<remove xpath="blocks/block[@name='forge']/property[@name='CraftCompleteSound']"/>
+	<remove xpath="blocks/block[@name='cementMixer']/property[@name='CraftCompleteSound']"/>
+	<remove xpath="blocks/block[@name='chemistryStation']/property[@name='CraftCompleteSound']"/>
+</fg7daysmod>
