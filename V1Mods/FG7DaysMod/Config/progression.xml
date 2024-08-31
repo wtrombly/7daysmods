@@ -1,10 +1,12 @@
-<fg7daysmod>
-		<!-- trying a more linear progression model -->
+<modtest>
+	<!-- trying a more linear progression model -->
 	<set xpath="/progression/level/@experience_multiplier">1.015</set>
 
-	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/effect_group/passive_effect[@name='CraftingTier'][@level='2,4,6,8,10,100']/@tags">,quickaxe,weedCleaver</append>
+	<append
+		xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/effect_group/passive_effect[@name='CraftingTier'][@level='2,4,6,8,10,100']/@tags">
+		,quickaxe,weedCleaver</append>
 	<!-- unused but in as an example
 	<set xpath="/progression/level/@exp_to_level">10000</set>
 	<set xpath="/progression/level/@skill_points_per_level">1</set>
 	-->
-</fg7daysmod>
+</modtest>

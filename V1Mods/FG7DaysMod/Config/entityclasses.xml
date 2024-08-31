@@ -1,23 +1,51 @@
-<fg7daysmod>
-		<!-- up backpack linger times for horde nights and such -->
-	<set xpath="/entity_classes/entity_class[@name='Backpack']/property[@name='TimeStayAfterDeath']/@value">7200</set>
-	<set xpath="/entity_classes/entity_class[@name='DroppedLootContainer']/property[@name='TimeStayAfterDeath']/@value">300</set>
-	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']/property[@name='TimeStayAfterDeath']/@value">7200</set>
-	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']/property[@name='TimeStayAfterDeath']/@value">7200</set>
-	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']/@value">7200</set>
-	<set xpath="/entity_classes/entity_class[@name='DroppedLootContainerTwitch']/property[@name='TimeStayAfterDeath']/@value">7200</set>
-		<!-- up the XP gain of tougher enemies -->
-	<set xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']/property[@name='ExperienceGain']/@value">2000</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']/property[@name='ExperienceGain']/@value">4000</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='ExperienceGain']/@value">5000</set>
-	<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='ExperienceGain']/@value">7000</set>
-	<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='ExperienceGain']/@value">4500</set>
-		<!-- Hunting wabbits -->
-	<set xpath="/entity_classes/entity_class[@name='animalRabbit']/property[@name='ExperienceGain']/@value">1200</set>
-	<set xpath="/entity_classes/entity_class[@name='animalChicken']/property[@name='ExperienceGain']/@value">4000</set>
-		<!-- The birds... oh dear god the birds -->
+<modtest>
+	<!-- up backpack linger times for horde nights and such -->
+	<set
+		xpath="/entity_classes/entity_class[@name='Backpack']/property[@name='TimeStayAfterDeath']/@value">
+		7200</set>
+	<set
+		xpath="/entity_classes/entity_class[@name='DroppedLootContainer']/property[@name='TimeStayAfterDeath']/@value">
+		300</set>
+	<set
+		xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']/property[@name='TimeStayAfterDeath']/@value">
+		7200</set>
+	<set
+		xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']/property[@name='TimeStayAfterDeath']/@value">
+		7200</set>
+	<set
+		xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']/property[@name='TimeStayAfterDeath']/@value">
+		7200</set>
+	<set
+		xpath="/entity_classes/entity_class[@name='DroppedLootContainerTwitch']/property[@name='TimeStayAfterDeath']/@value">
+		7200</set>
+	<!-- up the XP gain of tougher enemies -->
+	<set
+		xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']/property[@name='ExperienceGain']/@value">
+		2000</set>
+	<set
+		xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']/property[@name='ExperienceGain']/@value">
+		4000</set>
+	<set
+		xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='ExperienceGain']/@value">
+		5000</set>
+	<set
+		xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='ExperienceGain']/@value">
+		7000</set>
+	<set
+		xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='ExperienceGain']/@value">
+		4500</set>
+	<!-- Hunting wabbits -->
+	<set
+		xpath="/entity_classes/entity_class[@name='animalRabbit']/property[@name='ExperienceGain']/@value">
+		1200</set>
+	<set
+		xpath="/entity_classes/entity_class[@name='animalChicken']/property[@name='ExperienceGain']/@value">
+		4000</set>
+	<!-- The birds... oh dear god the birds -->
 	<append xpath="/entity_classes/entity_class[@name='animalZombieVulture']">
-		<property name="ExperienceGain" value="1200"/>
+		<property name="ExperienceGain" value="1200" />
 	</append>
-	<set xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']/property[@name='ExperienceGain']/@value">2400</set>
-</fg7daysmod>
+	<set
+		xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']/property[@name='ExperienceGain']/@value">
+		2400</set>
+</modtest>

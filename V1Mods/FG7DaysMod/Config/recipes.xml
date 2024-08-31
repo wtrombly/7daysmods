@@ -1,43 +1,50 @@
-<fg7daysmod>
+<modtest>
 	<set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']/@count">2</set>
 	<set xpath="/recipes/recipe[@name='foodMeatStew']/ingredient[@name='foodRawMeat']/@count">2</set>
-	<set xpath="/recipes/recipe[@name='foodSteakAndPotato']/ingredient[@name='foodRawMeat']/@count">2</set>
+	<set xpath="/recipes/recipe[@name='foodSteakAndPotato']/ingredient[@name='foodRawMeat']/@count">
+		2</set>
 	<set xpath="/recipes/recipe[@name='foodChiliDog']/ingredient[@name='foodRawMeat']/@count">1</set>
 	<set xpath="/recipes/recipe[@name='resourceOil']/ingredient[@name='resourceOilShale']/@count">10</set>
 	<set xpath="/recipes/recipe[@name='resourceGlue'][@craft_area='chemistryStation']/@count">3</set>
-	<set xpath="/recipes/recipe[@name='farmPlotBlockVariantHelper']/ingredient[@name='foodRottingFlesh']/@count">4</set>
+	<set
+		xpath="/recipes/recipe[@name='farmPlotBlockVariantHelper']/ingredient[@name='foodRottingFlesh']/@count">
+		4</set>
 	<set xpath="/recipes/recipe[@name='resourceLockPick']/@count">5</set>
-	<set xpath="/recipes/recipe[@name='resourceLockPickBundle']/ingredient[@name='resourceForgedIron']/@count">8</set>
+	<set
+		xpath="/recipes/recipe[@name='resourceLockPickBundle']/ingredient[@name='resourceForgedIron']/@count">
+		8</set>
 	<append xpath="/recipes">
 		<recipe name="resourceSpring" count="5" craft_area="forge" tags="workbenchCrafting">
-			<ingredient name="unit_iron" count="20"/>
-			<ingredient name="unit_clay" count="5"/>
+			<ingredient name="unit_iron" count="20" />
+			<ingredient name="unit_clay" count="5" />
 		</recipe>
-		<recipe name="resourceMechanicalParts" count="4" craft_area="workbench" tags="workbenchCrafting">
-			<ingredient name="resourceForgedIron" count="2"/>
-			<ingredient name="resourceDuctTape" count="1"/>
+		<recipe name="resourceMechanicalParts" count="4" craft_area="workbench"
+			tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="2" />
+			<ingredient name="resourceDuctTape" count="1" />
 		</recipe>
 		<recipe name="solarCell" count="1" craft_area="workbench" tags="perkAdvancedEngineering">
-			<ingredient name="resourceBrokenGlass" count="1"/>
-			<ingredient name="resourceScrapLead" count="50"/>
-			<ingredient name="resourceForgedIron" count="5"/>
-			<ingredient name="resourceSilverNugget" count="1"/>
+			<ingredient name="resourceBrokenGlass" count="1" />
+			<ingredient name="resourceScrapLead" count="50" />
+			<ingredient name="resourceForgedIron" count="5" />
+			<ingredient name="resourceSilverNugget" count="1" />
 		</recipe>
 		<recipe name="solarbank" count="1" craft_area="workbench" tags="perkAdvancedEngineering">
-			<ingredient name="resourceForgedSteel" count="20"/>
-			<ingredient name="resourceElectricParts" count="10"/>
-			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceForgedSteel" count="20" />
+			<ingredient name="resourceElectricParts" count="10" />
+			<ingredient name="resourceScrapPolymers" count="5" />
 		</recipe>
 		<recipe name="weedCleaver" count="1" tags="craftingHarvestingTools">
-			<ingredient name="resourceForgedIron" count="4"/>
-			<ingredient name="resourceWood" count="3"/>
+			<ingredient name="resourceForgedIron" count="4" />
+			<ingredient name="resourceWood" count="3" />
 		</recipe>
 		<recipe name="quickaxe" count="1" craft_area="workbench" tags="craftingHarvestingTools">
-			<ingredient name="resourceForgedIron" count="30"/>
-			<ingredient name="resourceWood" count="10"/>
-			<ingredient name="resourceLegendaryParts" count="0"/>
+			<ingredient name="resourceForgedIron" count="30" />
+			<ingredient name="resourceWood" count="10" />
+			<ingredient name="resourceLegendaryParts" count="0" />
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
+				<passive_effect name="CraftingIngredientCount" level="6" operation="base_add"
+					value="1" tags="resourceLegendaryParts" />
 			</effect_group>
 		</recipe>
 		<!--
@@ -46,105 +53,109 @@
 			<ingredient name="resourceRawDiamond" count="2"/>
 		</recipe> -->
 		<recipe name="smallEngine" count="1" craft_area="workbench">
-			<ingredient name="resourceForgedSteel" count="25"/>
-			<ingredient name="resourceElectricParts" count="10"/>
-			<ingredient name="resourceMechanicalParts" count="15"/>
-			<ingredient name="resourceOil" count="2"/>
+			<ingredient name="resourceForgedSteel" count="25" />
+			<ingredient name="resourceElectricParts" count="10" />
+			<ingredient name="resourceMechanicalParts" count="15" />
+			<ingredient name="resourceOil" count="2" />
 		</recipe>
-		<recipe name="toolBeaker" count="1" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true">
-			<ingredient name="unit_glass" count="200"/>
-			<ingredient name="unit_clay" count="50"/>
-			<ingredient name="unit_lead" count="10"/>
+		<recipe name="toolBeaker" count="1" craft_area="forge" craft_tool="toolForgeCrucible"
+			material_based="true">
+			<ingredient name="unit_glass" count="200" />
+			<ingredient name="unit_clay" count="50" />
+			<ingredient name="unit_lead" count="10" />
 		</recipe>
 		<recipe name="drinkCanMegaCrush" count="1" craft_area="chemistryStation">
-			<ingredient name="drinkJarBoiledWater" count="1"/>
-			<ingredient name="resourceCropCoffeeBeans" count="2"/>
-			<ingredient name="resourceCropChrysanthemumPlant" count="2"/>
-			<ingredient name="drinkJarBeer" count="1"/>
-			<ingredient name="foodCropYuccaFruit" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1" />
+			<ingredient name="resourceCropCoffeeBeans" count="2" />
+			<ingredient name="resourceCropChrysanthemumPlant" count="2" />
+			<ingredient name="drinkJarBeer" count="1" />
+			<ingredient name="foodCropYuccaFruit" count="1" />
 		</recipe>
 		<recipe name="resourceAcid" count="1" craft_area="chemistryStation">
-			<ingredient name="drinkJarBoiledWater" count="1"/>
-			<ingredient name="resourceCropCoffeeBeans" count="1"/>
-			<ingredient name="resourceCropGoldenrodPlant" count="1"/>
-			<ingredient name="resourcePotassiumNitratePowder" count="2"/>
-			<ingredient name="foodCropMushrooms" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1" />
+			<ingredient name="resourceCropCoffeeBeans" count="1" />
+			<ingredient name="resourceCropGoldenrodPlant" count="1" />
+			<ingredient name="resourcePotassiumNitratePowder" count="2" />
+			<ingredient name="foodCropMushrooms" count="1" />
 		</recipe>
 		<recipe name="meleeToolAllSteelParts" count="3" craft_area="workbench">
-			<ingredient name="resourceForgedSteel" count="1"/>
-			<ingredient name="resourceDuctTape" count="1"/>
-			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceForgedSteel" count="1" />
+			<ingredient name="resourceDuctTape" count="1" />
+			<ingredient name="resourceMechanicalParts" count="1" />
 		</recipe>
 		<recipe name="meleeWpnBladeT3MacheteParts" count="3" craft_area="workbench">
-			<ingredient name="resourceForgedSteel" count="2"/>
-			<ingredient name="resourceDuctTape" count="1"/>
-			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceForgedSteel" count="2" />
+			<ingredient name="resourceDuctTape" count="1" />
+			<ingredient name="resourceMechanicalParts" count="1" />
 		</recipe>
 		<recipe name="gunBowT1WoodenBowParts" count="3" craft_area="workbench">
-			<ingredient name="resourceForgedIron" count="2"/>
-			<ingredient name="resourceWood" count="4"/>
-			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceForgedIron" count="2" />
+			<ingredient name="resourceWood" count="4" />
+			<ingredient name="resourceMechanicalParts" count="1" />
 		</recipe>
 		<recipe name="resourceScrapPolymers" count="5" craft_area="chemistryStation">
-			<ingredient name="resourceOil" count="1"/>
-			<ingredient name="resourceCoal" count="1"/>
+			<ingredient name="resourceOil" count="1" />
+			<ingredient name="resourceCoal" count="1" />
 		</recipe>
 		<recipe name="gunMGT1AK47Parts" count="1" craft_area="workbench">
-			<ingredient name="resourceForgedSteel" count="2"/>
-			<ingredient name="resourceOil" count="1"/>
-			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceForgedSteel" count="2" />
+			<ingredient name="resourceOil" count="1" />
+			<ingredient name="resourceMechanicalParts" count="1" />
 		</recipe>
 		<recipe name="gunHandgunT1PistolParts" count="1" craft_area="workbench">
-			<ingredient name="resourceForgedSteel" count="1"/>
-			<ingredient name="resourceOil" count="1"/>
-			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceForgedSteel" count="1" />
+			<ingredient name="resourceOil" count="1" />
+			<ingredient name="resourceMechanicalParts" count="1" />
 		</recipe>
 		<recipe name="gunRifleT1HuntingRifleParts" count="1" craft_area="workbench">
-			<ingredient name="resourceForgedSteel" count="2"/>
-			<ingredient name="resourceOil" count="1"/>
-			<ingredient name="resourceMechanicalParts" count="2"/>
+			<ingredient name="resourceForgedSteel" count="2" />
+			<ingredient name="resourceOil" count="1" />
+			<ingredient name="resourceMechanicalParts" count="2" />
 		</recipe>
 		<recipe name="gunShotgunT1DoubleBarrelParts" count="1" craft_area="workbench">
-			<ingredient name="resourceForgedSteel" count="3"/>
-			<ingredient name="resourceOil" count="1"/>
-			<ingredient name="resourceMechanicalParts" count="2"/>
+			<ingredient name="resourceForgedSteel" count="3" />
+			<ingredient name="resourceOil" count="1" />
+			<ingredient name="resourceMechanicalParts" count="2" />
 		</recipe>
 		<recipe name="gunBotRoboticsParts" count="1" craft_area="workbench">
-			<ingredient name="resourceForgedSteel" count="3"/>
-			<ingredient name="resourceOil" count="1"/>
-			<ingredient name="resourceMechanicalParts" count="2"/>
-			<ingredient name="resourceElectricParts" count="3"/>
+			<ingredient name="resourceForgedSteel" count="3" />
+			<ingredient name="resourceOil" count="1" />
+			<ingredient name="resourceMechanicalParts" count="2" />
+			<ingredient name="resourceElectricParts" count="3" />
 		</recipe>
 		<recipe name="meleeToolAxeT3ChainsawParts" count="1" craft_area="workbench">
-			<ingredient name="resourceForgedSteel" count="3"/>
-			<ingredient name="resourceOil" count="1"/>
-			<ingredient name="resourceMechanicalParts" count="3"/>
-			<ingredient name="resourceElectricParts" count="2"/>
+			<ingredient name="resourceForgedSteel" count="3" />
+			<ingredient name="resourceOil" count="1" />
+			<ingredient name="resourceMechanicalParts" count="3" />
+			<ingredient name="resourceElectricParts" count="2" />
 		</recipe>
 		<recipe name="resourceSewingKit" count="1" craft_area="workbench">
-			<ingredient name="resourceNail" count="1"/>
-			<ingredient name="resourceCloth" count="1"/>
-			<ingredient name="resourceScrapPolymers" count="3"/>
-			<ingredient name="resourceCropCottonPlant" count="10"/>
+			<ingredient name="resourceNail" count="1" />
+			<ingredient name="resourceCloth" count="1" />
+			<ingredient name="resourceScrapPolymers" count="3" />
+			<ingredient name="resourceCropCottonPlant" count="10" />
 		</recipe>
 		<recipe name="resourceLegendaryParts" count="2" craft_area="workbench">
-			<ingredient name="resourceForgedSteel" count="2"/>
-			<ingredient name="resourceOil" count="1"/>
-			<ingredient name="resourceMechanicalParts" count="3"/>
+			<ingredient name="resourceForgedSteel" count="2" />
+			<ingredient name="resourceOil" count="1" />
+			<ingredient name="resourceMechanicalParts" count="3" />
 		</recipe>
-		<recipe name="toolDewFilter" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
-			<ingredient name="resourceScrapPolymers" count="5"/>
-			<ingredient name="resourcePaper" count="2"/>
-			<ingredient name="resourceCloth" count="5"/>
-			<ingredient name="resourceCrushedSand" count="5"/>
-			<ingredient name="resourceCoal" count="10"/>
+		<recipe name="toolDewFilter" count="1" craft_time="10" craft_area="workbench"
+			tags="workbenchCrafting">
+			<ingredient name="resourceScrapPolymers" count="5" />
+			<ingredient name="resourcePaper" count="2" />
+			<ingredient name="resourceCloth" count="5" />
+			<ingredient name="resourceCrushedSand" count="5" />
+			<ingredient name="resourceCoal" count="10" />
 		</recipe>
-		<recipe name="drinkJarEmpty" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
-			<ingredient name="unit_glass" count="10"/>
-			<ingredient name="unit_clay" count="1"/>
+		<recipe name="drinkJarEmpty" count="1" material_based="true" craft_area="forge"
+			is_trackable="false" tags="perkAdvancedEngineering">
+			<ingredient name="unit_glass" count="10" />
+			<ingredient name="unit_clay" count="1" />
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".8,.6,.5,.4,.2" tags="unit_glass"/>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add"
+					level="0,1,2,3,4" value=".8,.6,.5,.4,.2" tags="unit_glass" />
 			</effect_group>
 		</recipe>
 	</append>
-</fg7daysmod>
+</modtest>

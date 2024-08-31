@@ -1,4 +1,4 @@
-<fg7daysmod>
+<modtest>
 	<!-- Attempting to quiet the blade trap. -->
 	<set xpath="/Sounds/SoundDataNode[@name='bladetrap_fire_lp']/AudioClip/@Loop">false</set>
-</fg7daysmod>
+</modtest>

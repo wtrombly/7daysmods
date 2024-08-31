@@ -1,4 +1,8 @@
-<fg7daysmod>
-    <setattribute xpath="/item_modifiers/item_modifier[@name='modArmorCigar']/effect_group/passive_effect[@name='BarteringBuying']" name="value">0.5</setattribute>
-	<setattribute xpath="/item_modifiers/item_modifier[@name='modArmorCigar']/effect_group/passive_effect[@name='BarteringSelling']" name="value">0.5</setattribute>
-</fg7daysmod>
+<modtest>
+    <setattribute
+        xpath="/item_modifiers/item_modifier[@name='modArmorCigar']/effect_group/passive_effect[@name='BarteringBuying']"
+        name="value">0.5</setattribute>
+    <setattribute
+        xpath="/item_modifiers/item_modifier[@name='modArmorCigar']/effect_group/passive_effect[@name='BarteringSelling']"
+        name="value">0.5</setattribute>
+</modtest>

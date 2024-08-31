@@ -1,28 +1,41 @@
-<fg7daysmod>
-		<!-- Carry useful quantities of stuff -->
-	<set xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceScrapBrass']/@count">500,2000</set>
-	<set xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceAnimalFat']/@count">100,400</set>
-	<set xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceScrapIron']/@count">400,4000</set>
+<modtest>
+	<!-- Carry useful quantities of stuff -->
+	<set
+		xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceScrapBrass']/@count">
+		500,2000</set>
+	<set
+		xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceAnimalFat']/@count">
+		100,400</set>
+	<set
+		xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceScrapIron']/@count">
+		400,4000</set>
 
-		<!-- Get boned -->
+	<!-- Get boned -->
 	<append xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']">
-		<item name="resourceBone" count="10,50"/> <!-- 25 bundle size -->
+		<item name="resourceBone" count="10,50" /> <!-- 25 bundle size -->
 	</append>
 
-	<!-- <set xpath="/traders/trader_item_groups/trader_item_group[@name='perkBooks']/@count">4</set> -->
-	<!-- <set xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']/@count">4</set> -->
-	<!-- <set xpath="/traders/trader_item_groups/trader_item_group[@name='books']/item[@group='perkBooks']/@count">3</set> -->
-	<set xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item/@count">1,5</set>
+	<!-- <set
+	xpath="/traders/trader_item_groups/trader_item_group[@name='perkBooks']/@count">4</set> -->
+	<!-- <set
+	xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']/@count">4</set> -->
+	<!-- <set
+	xpath="/traders/trader_item_groups/trader_item_group[@name='books']/item[@group='perkBooks']/@count">3</set> -->
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item/@count">
+		1,5</set>
 
-		<!-- can we not have crap for sale? -->
-	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceWood']"/>
-	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceCrushedSand']"/>
-	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='bucketEmpty']"/>
+	<!-- can we not have crap for sale? -->
+	<remove
+		xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceWood']" />
+	<remove
+		xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='resourceCrushedSand']" />
+	<remove
+		xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']/item[@name='bucketEmpty']" />
 
 	<set xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']/@count">3</set>
 	<set xpath="/traders/trader_item_groups/trader_item_group[@name='tools']/@count">3</set>
 
 	<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
-		<item name="modGunSoundSuppressorSilencerSchematic" count="1"/>
+		<item name="modGunSoundSuppressorSilencerSchematic" count="1" />
 	</append>
-</fg7daysmod>
+</modtest>
