@@ -18,6 +18,14 @@
 			<ingredient name="unit_iron" count="20" />
 			<ingredient name="unit_clay" count="5" />
 		</recipe>
+		<recipe name="ammoArrowStone" count="1">
+			<ingredient name="resourceRockSmall" count="1" />
+			<ingredient name="resourceScrapPolymers" count="1" />
+		</recipe>
+		<recipe name="ammoBundleArrowStone" count="1" craft_time="240" tags="learnable">
+			<ingredient name="resourceRockSmall" count="80" />
+			<ingredient name="resourceScrapPolymers" count="80" />
+		</recipe>
 		<recipe name="resourceMechanicalParts" count="4" craft_area="workbench"
 			tags="workbenchCrafting">
 			<ingredient name="resourceForgedIron" count="2" />
