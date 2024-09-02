@@ -48,4 +48,15 @@
 	<set
 		xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']/property[@name='ExperienceGain']/@value">
 		2400</set>
+
+	<append xpath="/entity_classes">
+		<entity_class name="Mutant" extends="zombieBoe">
+			<property name="ExperienceGain" value="5000" />
+			<property name="Tags" value="entity,zombie,walker" />
+			<property name="AvatorController" value="AvatarZombieController" />
+			<property name="Mesh" value="#@modfolder:Resources/Mutant.unity3d?Mutant" />
+			<property name="UserSpawnType" value="Menu" />
+			<property name="Weight" value="200" />
+		</entity_class>
+	</append>
 </modtest>
