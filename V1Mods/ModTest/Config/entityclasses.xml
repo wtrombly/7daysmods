@@ -49,14 +49,72 @@
 		xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']/property[@name='ExperienceGain']/@value">
 		2400</set>
 
+	<!-- Zombie spider got jumps-->
+	<set
+		xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='JumpMaxDistance']/@value">
+		18, 20</set>
+
+	<!-- Mutant -->
 	<append xpath="/entity_classes">
 		<entity_class name="Mutant" extends="zombieBoe">
-			<property name="ExperienceGain" value="5000" />
+			<property name="ExperienceGain" value="10000" />
 			<property name="Tags" value="entity,zombie,walker" />
 			<property name="AvatorController" value="AvatarZombieController" />
-			<property name="Mesh" value="#@modfolder:Resources/Mutant.unity3d?Mutant" />
+			<property name="Mesh" value="#@modfolder:Resources/Mutant.unity3d?Mutant_Sol" />
 			<property name="UserSpawnType" value="Menu" />
 			<property name="Weight" value="200" />
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="1500" />
+				<!--<passive_effect
+				name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral
+				damage -->
+			</effect_group>
+		</entity_class>
+		<entity_class name="Parasite" extends="zombieFatCop">
+			<property name="ExperienceGain" value="10000" />
+			<property name="Tags" value="entity,zombie,walker,zombieCop" />
+			<property name="AvatorController" value="AvatarZombieController" />
+			<property name="Mesh" value="#@modfolder:Resources/Parasite.unity3d?Parasite_Sol" />
+			<property name="UserSpawnType" value="Menu" />
+			<property name="Weight" value="150" />
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="800" />
+				<!--<passive_effect
+				name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral
+				damage -->
+			</effect_group>
+		</entity_class>
+		<entity_class name="MutantFeral" extends="zombieBoeFeral">
+			<property name="ExperienceGain" value="20000" />
+			<property name="Tags" value="entity,zombie,walker,feral,radiated" />
+			<property name="AvatorController" value="AvatarZombieController" />
+			<property name="Mesh" value="#@modfolder:Resources/Mutant.unity3d?Mutant_Sol" />
+			<property name="UserSpawnType" value="Menu" />
+			<property name="Weight" value="200" />
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="5000" />
+				<!--<passive_effect
+				name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral
+				damage -->
+			</effect_group>
+		</entity_class>
+		<entity_class name="ParasiteFeral" extends="zombieFatCopRadiated">
+			<property name="ExperienceGain" value="20000" />
+			<property name="Tags" value="entity,zombie,walker,feral,radiated,zombieCop" />
+			<property name="AvatorController" value="AvatarZombieController" />
+			<property name="Mesh" value="#@modfolder:Resources/Parasite.unity3d?Parasite_Sol" />
+			<property name="UserSpawnType" value="Menu" />
+			<property name="Weight" value="150" />
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="2200" />
+				<!--<passive_effect
+				name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral
+				damage -->
+			</effect_group>
 		</entity_class>
 	</append>
 </modtest>

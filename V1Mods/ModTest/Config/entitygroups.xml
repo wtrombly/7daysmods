@@ -1,0 +1,14 @@
+<modtest>
+    <append xpath="/entitygroups">
+
+        <!-- *** DAY -->
+        <entitygroup name="ParasiteMutant">
+            Mutant, .5
+            Parasite, .5
+        </entitygroup>
+        <entitygroup name="ParasiteMutantFeral">
+            MutantFeral, .5
+            ParasiteFeral, .5
+        </entitygroup>
+    </append>
+</modtest>
